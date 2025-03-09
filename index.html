@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Home</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyWg4ByETfF8E5R4EtFq4s/F6GJPUjRAMg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYopr4z+DS5F/vJd5K2ST5vmM99aE2iSBLA6G6" crossorigin="anonymous">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/St Joseph School Logo.png" type="gvkimg/logo.jpeg" />
+		<link rel="apple-touch-icon" href="img/St Joseph School Logo.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-corporate-3.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		
+		<style>
+			.text-stroke {
+				color: transparent;
+				-webkit-text-stroke: 1px white; /* WebKit browsers */
+				text-stroke: 1px white; /* Standard syntax */
+			}
+		</style>
+		
+		<style>
+			body {
+				font-family: 'Arial', sans-serif;
+				background-color: #f4f4f4; /* Light gray background */
+			}
+	
+			form {
+				max-width: 600px;
+				margin: 20px auto;
+				background-color: #007bff; /* Blue background */
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				color: #fff; /* White text color */
+			}
+	
+			h2 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+	
+			label {
+				display: block;
+				margin-bottom: 8px;
+			}
+	
+			input,
+			textarea {
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 16px;
+				box-sizing: border-box;
+			}
+	
+			button {
+				background-color: #fff; /* White button color */
+				color: #007bff; /* Blue button text color */
+				padding: 10px 20px;
+				border: none;
+				cursor: pointer;
+			}
+	
+			button:hover {
+				background-color: #e6e6e6; /* Light gray on hover */
+			}
+	
+			.error-message {
+				color: red;
+				margin-top: -10px;
+				margin-bottom: 10px;
+			}
+		</style>
+		<style>
+			.logo-img {
+				max-width: 40%; /* Adjust the maximum width of the logo */
+				height: auto;
+			}
+		</style>
+
+		<style>
+			
+/* General popup overlay setup */
+.poster {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position for overlay */
+    top:100px;
+    left: 500px;
+    width: 650px; /* Cover the entire viewport width */
+    height: 650px; /* Cover the entire viewport height */
+   
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999; /* Ensure it's above other content */
+	
+}
+
+/* Popup content styling */
+.poster-content {
+    background-color: white; /* Popup background color */
+    padding: 5px;
+    border-radius: 8px;
+    max-width: 90vw; /* Ensure responsive width */
+    max-height: 90vh; /* Ensure responsive height */
+    position: relative; /* Allow positioning of child elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styling for the image inside the popup */
+.poster-content img {
+    max-width: 600px; /* Fit the image inside the container */
+    max-height: 600px; /* Ensure it doesn't overflow */
+    display: block;
+    margin: auto; /* Center the image */
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: rgb(15, 144, 56);
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-btn:hover {
+    color: red;
+}
+</style>
+
+		
+
+	
+
+		
+
+	</head>
+	<body>
+		
+		
+			
+		
+		
+
+		
+
+		<div class="body">
+			
+			<header id="header"
+			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': true}">
+			<div class="header-body border-color-primary border-top-0 box-shadow-none">
+
+
+
+				<div class="header-container container z-index-2">
+					<div class="header-row py-2">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo header-logo-sticky-change">
+									<a href="index.html">
+										<img class="header-logo-sticky opacity-0" alt="GVK" width="100" height="70"
+											data-sticky-width="89" data-sticky-height="43" data-sticky-top="88"
+											src="img/St Joseph School Logo.png">
+										<img class="header-logo-non-sticky opacity-0" alt="GVK" width="100"
+											height="80" src="img/St Joseph School Logo.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<ul class="header-extra-info d-flex align-items-center">
+									<li class="d-none d-sm-inline-flex">
+										<div class="header-extra-info-icon">
+											<i
+												class="fa-solid fa-location-dot text-color-primary text-4 position-relative bottom-2"></i>
+										</div>
+										
+									</li>
+									<li class="d-none d-sm-inline-flex">
+										<div class="header-extra-info-icon">
+											<i
+												class="far fa-envelope text-color-primary text-4 position-relative bottom-2"></i>
+										</div>
+										<div class="header-extra-info-text">
+											<label>SEND US AN EMAIL</label>
+											<strong><a href="mailto:sjpsagpalace@yahoo.com"
+													class="text-decoration-none text-color-hover-primary">sjpsagpalace@yahoo.com </a></strong>
+										</div>
+									</li>
+									<li>
+										<div class="header-extra-info-icon">
+											<i
+												class="fab fa-whatsapp text-color-primary text-4 position-relative bottom-1"></i>
+										</div>
+										<div class="header-extra-info-text">
+											<label>CALL US NOW</label>
+											<strong><a href="tel:6309935410"
+													class="text-decoration-none text-color-hover-primary">6309935410 </a></strong>
+										</div>
+									</li>
+
+									<li>
+										<a href="https://payfees.kyc365pro.com/login" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">PAY FEE</a>
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-nav-bar bg-primary" data-sticky-header-style="{'minResolution': 991}"
+					data-sticky-header-style-active="{'background-color': 'transparent'}"
+					data-sticky-header-style-deactive="{'background-color': '#0088cc'}">
+					<div class="container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row justify-content-end">
+									<div class="header-nav header-nav-force-light-text justify-content-start py-2 py-lg-3"
+										data-sticky-header-style="{'minResolution': 991}"
+										data-sticky-header-style-active="{'margin-left': '135px'}"
+										data-sticky-header-style-deactive="{'margin-left': '0'}">
+										<div
+											class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle active"
+															href="index.html">
+															Home
+														</a>
+													</li>
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle"
+															href="aboutSchool.html">
+															About
+														</a>
+														<ul class="dropdown-menu">
+															<li>
+																<div class="dropdown-mega-content`">
+																	<div class="row">
+																		<div class="col-lg-3">
+
+																			<ul class="dropdown-mega-sub-nav">
+																				<li><a class="dropdown-item"
+																						href="aboutSchool.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">About
+																						the School</a></li>
+																				<li><a class="dropdown-item"
+																						href="civilization.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">Civilization 
+																						</a></li>
+																				<li><a class="dropdown-item"
+																						href="purpose.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">Purpose & Commitment
+																						</a></li>
+
+																			</ul>
+
+																		</div>
+
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</li>
+
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle "
+															href="Extra-curricular.html">
+															Extra-curricular
+														</a>
+													</li>
+
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle "
+															href="gallery.html">
+															Gallery
+														</a>
+													</li>
+													
+													
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle" href="contact.html">
+															Contact Us
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav my-2" data-bs-toggle="collapse"
+											data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- The Popup -->
+<div id="poster" class="poster">
+    <div class="poster-content">
+        <span class="close-btn" id="closeBtn">Close</span>
+        <div class="image-container">
+            <img src="images/popup.jpg" alt="Poster Image" class="popup-image">
+        </div>
+    </div>
+</div>
+
+<script>
+    // Get elements for closing the popup
+    const closeBtn = document.getElementById('closeBtn');
+    const poster = document.getElementById('poster');
+
+    // Close the popup when the close button is clicked
+    closeBtn.addEventListener('click', () => {
+        poster.style.display = 'none';
+    });
+
+    // Optionally, you can show the popup automatically
+    window.onload = () => {
+        poster.style.display = 'block';
+    };
+</script>
+
+
+
+			<div role="main" class="main">
+				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover show-dots-xs nav-style-1 nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['650px','650px','650px','550px','500px']" style="height: 650px;">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+
+							<!-- Carousel Slide 1 -->
+							<div class="owl-item position-relative" style="background-image: url(img/Banner1.jpeg); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-1 h-30">
+									<div class="row align-items-center h-100">
+										<div class="col-lg-6 text-center">
+											<div class="d-flex flex-column align-items-center justify-content-center h-100">
+												<h3 class="position-relative text-color-dark text-5 line-height-5 font-weight-medium ls-0 px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+													<span class="position-absolute right-100pct top-50pct transform3dy-n50 ">
+														
+													</span>
+													<!-- <span class="position-relative  " style="color: rgb(8, 1, 8);">Gloria Vidhya kendra <span class="position-absolute left-50pct transform3dx-n50 top-0 mt-4"><img src="img/slides/slide-blue-line.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+													<span class="position-absolute left-100pct top-50pct transform3dy-n50"> -->
+														
+													</span>
+												</h3>
+												<h1 class="text-color-dark font-weight-extra-bold text-12-5 line-height-1 mb-2 appear-animation text-stroke align-items-center text-center" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">ST. JOSEPH'S SCHOOL</h1>
+												<p class="text-4-5 text-color-dark font-weight-light mb-0 "  data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0} ">Welcome on&nbsp;board!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Carousel Slide 2 -->
+							<div class="owl-item position-relative overflow-hidden">
+								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToRight" data-appear-animation-duration="13s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show style="background-image: url(img/Banner11.jpg); background-size: cover; background-position: center;"></div>
+								<div class="container position-relative z-index-3 h-90">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-7">
+											<div class="d-flex flex-column align-items-center">
+												<h2 class="text-color-dark font-weight-extra-bold text-12-5 line-height-1 text-center mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">ST. JOSEPH'S SCHOOL</h2>
+												<p class="text-4-5 text-color-dark font-weight-light text-center mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}">Envisage to Empower and Enlighten Young Minds.</p>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="owl-item position-relative" style="background-image: url(img/Banner5.jpg); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-1 h-100">
+									<div class="row align-items-center h-100">
+										<div class="col-lg-6 text-center">
+											<div class="d-flex flex-column align-items-center justify-content-center h-100">
+												<h3 class="position-relative text-color-dark text-5 line-height-5 font-weight-medium ls-0 px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+													<!-- <span class="position-absolute right-100pct top-50pct transform3dy-n50">
+														<img src="img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span> -->
+													
+													<!-- <span class="position-absolute left-100pct top-50pct transform3dy-n50">
+														<img src="img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span> -->
+												</h3>
+												<h1 class="text-color-dark font-weight-extra-bold text-12-5 line-height-1 mb-2 appear-animation text-stroke" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">ST. Joseph's School</h1>
+												<p class="text-4-5 text-color-dark font-weight-light mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0}">Welcome on&nbsp;board!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+
+						</div>
+					</div>
+					<div class="owl-nav">
+						<button type="button" role="presentation" class="owl-prev" aria-label="Previous"></button>
+						<button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
+					</div>
+					<div class="owl-dots mb-5">
+						<button role="button" class="owl-dot active"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+						<button role="button" class="owl-dot"><span></span></button>
+					</div>
+				</div>
+
+				
+				
+				<section class="section section-height-3 bg-color-grey m-0 border-0">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 pb-4" style="font-family: 'Your Preferred Font', sans-serif;">
+								<h2 class="text-color-dark font-weight-normal text-6 mb-2">
+									About the <strong class="font-weight-extra-bold">School</strong>
+								</h2>
+								<p class="lead pe-lg-3">
+									St. Joseph's School, established in June 2000 in the Malakpet area of Hyderabad, is a part of the prestigious St. Joseph's Group of Schools, founded by late Sri U. G. Reddy in 1971. Over the years, the group has grown to encompass numerous educational institutions across the twin cities, building a legacy of excellence in education.
+								</p>
+								
+								<a href="aboutSchool.html" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">LEARN MORE</a>
+							</div>
+							<div class="col-lg-4">
+								<img src="img/School Image about.jpeg" style="width: 100%; height: auto;" class="img-fluid position-relative appear-animation mb-2" data-appear-animation="expandIn" data-appear-animation-delay="600" alt="School Image" />
+							</div>
+						</div>
+					</div>
+				</section>
+				
+
+				<div role="main" class="main" >
+
+					<section style="background-color: #fce8e8;">
+
+						<div class="container pt-5" >
+							<div class="row py-4 mb-2">
+	
+								<div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+									<img src="img/Founders.jpg" class="img-fluid mb-2" alt="" style="max-width: 100%; height: auto;">
+									<p class="font-weight-bold text-primary text-uppercase text-6 mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="300">Late Shri U. GREGORY REDDY</p><br>
+									<p class="font-weight-bold text-primary text-uppercase text-6 mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="300">D.O.B 03.09.1932&nbsp;&nbsp;&nbsp;D.O.D 30.06.2021</p>
+								</div>
+								<div class="col-md-7 order-2">
+	
+									
+									<div class="overflow-hidden">
+										<h2 class="text-color-dark font-weight-bold text-12 mb-2 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">Founder  Secretary</h2>
+									</div>
+	
+									
+									<div class="overflow-hidden mb-3">
+										<p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="500"></p>
+									</div>
+									
+	
+									<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Though academic excellence is the main aim of our institutions, it is necessary to expose the students to outside world to relax and think. 
+										St. Joseph’s Education Society started the Society’s first institution namely, St Anthony’s High School in the Himayathnagar area, in the year 1971 with classes I to V with English as the medium of instruction. It is said that like spring the beginnings of all great things are small.</a>
+									</p>
+									
+									<hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+									<div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+						
+									</div>
+								</div>
+								
+							</div>
+						</div>
+
+					</section>
+
+					<section style="background-color: #c7ebf7;">
+						<div class="container pt-5" >
+							<div class="row py-4 mb-2">
+								<div class="col-md-7 order-2">
+									<div class="overflow-hidden">
+										<h2 class="text-color-dark font-weight-bold text-12 mb-2 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">Principal’s desk</h2>
+									</div>
+									<div class="overflow-hidden mb-3">
+										<p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="500"></p>
+									</div>
+									<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Though academic excellence is the main aim of our institutions, it is necessary to expose the students to outside world to relax and think. 
+										To this end, the activities of various clubs like Science Club, 
+										Literary Club in our institutions helped to draw out and develop the talents and skills in the students. 
+										Our institutions have encouraged the students to participate in various activities conducted by organizations like NTSE, 
+										Maths Olympiad, and also involve in UN Day Celebrations every year. Our students are encouraged to participate in physical education activities. 
+										They excelled in BasketBall, Cricket, Tennis, Swimming, and Roller skating events held at National and State level. It is a regular annual feature with all our 
+										institutions to take the students on educational tours to various places of historical and cultural interest in the country.
+										<a >May God Bless you all.</a>
+									</p>
+									<hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+									<div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+						
+									</div>
+								</div>
+								<div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+									<img src="img/Principalstjospeh.jpg" class="img-fluid mb-2" alt="" style="max-width: 100%; height: auto;">
+									<p class="font-weight-bold text-color-dark text-uppercase text-4 mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="500">PRINCIPAL <br> MRS. U.A SUNDARI </p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					
+
+					
+					<section style="background-color: #b7eed9; padding: 20px;">
+						<div class="container">
+							<div class="row align-items-center">
+								<!-- Image Column -->
+								<div class="col-md-6 order-md-2 text-center">
+									<img src="images/secretary.jpg" class="img-fluid mb-3" alt="Secretary" style="max-width: 100%; height: auto;">
+								</div>
+								<!-- Text Column -->
+								<div class="col-md-6 order-md-1 text-center">
+									<p class="font-weight-bold text-primary text-uppercase text-6 mb-0">SECRETARY</p>
+									<br>
+									<p class="font-weight-bold text-primary text-uppercase text-6 mb-0">MR. U. ALEXANDER REDDY</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				
+
+					
+					
+					
+					
+					<section class="section section-primary">
+						<div class="container">
+							<div class="row counters counters-text-light">
+								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+									<div class="counter">
+										<strong data-to="3000" data-append="+">0</strong>
+										<label>Happy Students</label>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+									<div class="counter">
+										<strong data-to="24" data-append="+">0</strong>
+										<label>Years</label>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+									<div class="counter">
+										<strong data-to="80" data-append="+">0</strong>
+										<label>Classrooms</label>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3">
+									<div class="counter">
+										<strong data-to="100" data-append="+">0</strong>
+										<label>Faculty</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					
+				
+
+					<div class="container" style="background-color: #ebd9f5;">
+
+						<div class="container pt-5" >
+						
+							
+							<div class="overflow-hidden">
+								<h2 class="text-color-dark font-weight-bold text-10 mb-2 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">Congratulations to the toppers of 2023-2024</h2>
+							</div>
+							<div class="overflow-hidden mb-3">
+								<p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation text-center" data-appear-animation="maskUp" data-appear-animation-delay="500"></p>
+							</div>
+							
+	
+				</div>
+						<div class="row py-5 my-5">
+							<div class="col-12 text-center appear-animation" data-appear-animation="fadeInRightShorter">
+								<div class="row justify-content-center">
+									<div class="col-md-2 col-sm-4 col-6 mb-4">
+										<img class="img-fluid rounded-0 mb-2" src="img/01.jpg"  />
+										<h3 class="font-weight-bold text-color-dark text-4 mb-0">Mast. Buvuna Anshul Ram</h3>
+										<p class="card-text">590/600 - 98.3% </p>
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-6 mb-4">
+										<img class="img-fluid rounded-0 mb-2" src="img/02.jpg" />
+										<h3 class="font-weight-bold text-color-dark text-4 mb-0">Mast. Suchir Malkapuram</h3>
+										<p class="card-text">583/600 - 97.1% </p>
+									</div>
+									
+									<div class="col-md-2 col-sm-4 col-6 mb-4">
+										<img class="img-fluid rounded-0 mb-2" src="img/03-3.jpg"  />
+										<h3 class="font-weight-bold text-color-dark text-4 mb-0">Kum. Rachakonda Amrutha</h3>
+										<p class="card-text">580/600 - 96.6% </p>
+									</div>
+									<div class="col-md-2 col-sm-4 col-6 mb-4">
+										<img class="img-fluid rounded-0 mb-2" src="img/03-4.jpg"  />
+										<h3 class="font-weight-bold text-color-dark text-4 mb-0">Kum. Vennu Saanvi Reddy</h3>
+										<p class="card-text">580/600 - 96.6% </p>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-6 mb-4">
+										<img class="img-fluid rounded-0 mb-2" src="img/03.jpg"  />
+										<h3 class="font-weight-bold text-color-dark text-4 mb-0">Mast. Pillutla Yashwanth</h3>
+										<p class="card-text">580/600 - 96.6% </p>
+									</div>
+
+
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+	
+				
+
+				<div class="container">
+					<div class="row py-5 my-5">
+						<div class="col-md-6 order-2 order-md-1 text-center text-md-start appear-animation mt-2 pt-1" data-appear-animation="fadeInRightShorter">
+							<div class="owl-carousel owl-theme nav-style-1 mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': true, 'nav': false, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
+								<div>
+									<img class="img-fluid rounded-0 mb-4" src="img/Investiturest.jpg" alt="" />
+									<h3 class="font-weight-bold text-color-dark text-4 mb-0">Investiture Ceremony</h3>
+									
+								</div>
+								<div>
+									<img class="img-fluid rounded-0 mb-4" src="img/independencest.jpg" alt="" />
+									<h3 class="font-weight-bold text-color-dark text-4 mb-0">Independence Day</h3>
+									
+								</div>
+								<div>
+									<img class="img-fluid rounded-0 mb-4" src="images/fruits/image4.jpg" alt="" />
+									<h3 class="font-weight-bold text-color-dark text-4 mb-0">Childrens Day</h3>
+									
+								</div>
+								<div>
+									<img class="img-fluid rounded-0 mb-4" src="img/Vanamahostavst.JPG" alt="" />
+									<h3 class="font-weight-bold text-color-dark text-4 mb-0">Vanamahostavst Day</h3>
+									
+								</div>
+								<div>
+									<img class="img-fluid rounded-0 mb-4" src="img/UGRMst.JPG" alt="" />
+									<h3 class="font-weight-bold text-color-dark text-4 mb-0">UGRM</h3>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 order-1 order-md-2 text-center text-md-start mb-5 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+							<h2 class="text-color-dark font-weight-normal text-6 mb-2">Latest <strong class="font-weight-extra-bold">News or Events</strong></h2>
+							<p class="lead">Stay updated with the latest happenings at St. Joseph Public School. We take pride in sharing our achievements, events, and noteworthy news with our school community.</p>
+		
+							<a href="gallery.html" class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section section-height-3 bg-color-lightblue m-0 border-0 animated fadeInUp">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-md-10 text-center">
+							<h2 class="text-color-dark font-weight-normal text-6 mb-2">Why Choose St. Joseph School?</h2>
+							<p class="lead text-dark">Discover what sets us apart and makes us the ideal choice for your child's education.</p>
+						</div>
+					</div>
+		
+					<!-- Key Features -->
+					<div class="row mt-4">
+						<!-- Add animated class to trigger animation -->
+						<div class="col-md-4 mb-4 animated fadeInUp">
+							<div class="card text-center">
+								<div class="card-body">
+									<i class="fas fa-graduation-cap fa-3x mb-3 text-primary"></i>
+									<h5 class="card-title">Academic Excellence</h5>
+									<p class="card-text">Our commitment to academic excellence ensures that students receive a top-notch education, preparing them for future success.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4 animated fadeInUp">
+							<div class="card text-center">
+								<div class="card-body">
+									<i class="fas fa-chalkboard-teacher fa-3x mb-3 text-primary"></i>
+									<h5 class="card-title">Experienced Faculty</h5>
+									<p class="card-text">Our dedicated team of experienced and passionate educators is committed to nurturing the potential of each student.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4 animated fadeInUp">
+							<div class="card text-center">
+								<div class="card-body">
+									<i class="fas fa-globe fa-3x mb-3 text-primary"></i>
+									<h5 class="card-title">Holistic Development</h5>
+									<p class="card-text">We focus on the holistic development of students, fostering not only academic excellence but also character, creativity, and critical thinking skills.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Unique Offerings -->
+					<div class="row mt-4">
+						<div class="col-md-6 animated fadeInUp">
+							<h3 class="text-color-dark font-weight-bold text-4 mb-3">Our Unique Offerings</h3>
+							<ul class="list-unstyled">
+								<li><i class="fas fa-check-circle text-primary"></i> State-of-the-art facilities and infrastructure</li>
+								<li><i class="fas fa-check-circle text-primary"></i> Engaging extracurricular activities for holistic development</li>
+								<li><i class="fas fa-check-circle text-primary"></i> Supportive and inclusive learning environment</li>
+								<li><i class="fas fa-check-circle text-primary"></i> Emphasis on values and character education</li>
+							</ul>
+						</div>
+						<div class="col-md-6 animated fadeInUp">
+							
+						</div>
+					</div>
+		
+					<!-- Call to Action -->
+					<div class="row mt-4">
+						<div class="col-md-12 text-center animated fadeInUp">
+							<p class="lead">Choose St. Joseph School for an enriching educational journey. Let's shape the future together!</p>
+							<!-- <a href="#" class="btn btn-primary btn-lg">Apply Now</a> -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- <div >
+				<form id="admissionForm" style="background-color: #e3a9f5;color: black;" >
+					<h2>Admission Form</h2>
+			
+					<label for="studentName">Student's Name:</label>
+					<input type="text" id="studentName" name="studentName" required>
+			
+					<label for="parentName">Parent's Name:</label>
+					<input type="text" id="parentName" name="parentName" required>
+			
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+			
+					<label for="phoneNumber">Phone Number:</label>
+					<input type="tel" id="phoneNumber" name="phoneNumber" required>
+			
+					<label for="comments">Additional Comments:</label>
+					<textarea id="comments" name="comments" rows="4"></textarea>
+			
+					<div class="error-message" id="errorMessage"></div>
+			
+					<button type="button" onclick="submitForm()">Submit</button>
+				</form>
+			</div> -->
+			
+		
+			<script>
+				function submitForm() {
+					var studentName = document.getElementById("studentName").value;
+					var parentName = document.getElementById("parentName").value;
+					var email = document.getElementById("email").value;
+					var phoneNumber = document.getElementById("phoneNumber").value;
+		
+					// Basic email validation
+					var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+					if (!emailRegex.test(email)) {
+						document.getElementById("errorMessage").innerHTML = "Please enter a valid email address.";
+						return;
+					}
+		
+					// You can add more validation if needed
+		
+					// Clear error message
+					document.getElementById("errorMessage").innerHTML = "";
+		
+					// Send form data via email (replace with your own logic)
+					var mailtoLink = "mailto:sjpsagpalace@yahoo.com" +
+						"?subject=Admission Form Submission" +
+						"&body=Student's Name: " + studentName +
+						"%0AParent's Name: " + parentName +
+						"%0AEmail: " + email +
+						"%0APhone Number: " + phoneNumber +
+						"%0AAdditional Comments: " + document.getElementById("comments").value;
+		
+					// Open default email client
+					window.location.href = mailtoLink;
+				}
+			</script>
+
+<footer id="footer" class="mt-0">
+    <div class="container my-10">
+        <div class="row py-5">
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="img/St Joseph School Logo.png" alt="Your Logo" class="logo-img">
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Contact Details</h5>
+                <p class="text-4 mb-2">Address: <span class="text-color-light">16-2-741,Asmangadh Palace, Malakpet, Hyderabad, Telangana 500036 </span></p>
+                <p class="text-4 mb-2">Phone no.: <span class="text-color-light">040 2406 4196 | 040-24066213 | 6309935410 </span></p>
+                <p class="text-4 mb-0">Email: <span class="text-color-light">sjpsagpalace@yahoo.com </span></p>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                <div>
+                    <h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Links</h5>
+                    <ul class="footer-links m-0"><!-- Center the links -->
+                        <li><a href="aboutSchool.html" target="_blank" title="About School">About School</a></li>
+                        <li><a href="gallery.html" target="_blank" title="Gallery">Gallery</a></li>
+                       </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-copyright footer-copyright-style-2 pb-4">
+            <div class="py-2">
+                <div class="row py-4">
+                    <div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+                        <p>© Copyright 2024. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+				<a href="https://www.sredutech.com/" target="_blank" title="Gallery">Developed by SR Edu Technologies Pvt. Ltd</a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-eMNCOqf6bHBCFsZH7/SNXZQlBOv81sWEj5A6uagFiiAgK8YGMISaa9aBlFV3/s8r" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyWg4ByETfF8E5R4EtFq4s/F6GJPUjRAMg" crossorigin="anonymous"></script>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+</html>

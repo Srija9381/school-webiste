@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Home</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			.text-stroke {
+				color: transparent;
+				-webkit-text-stroke: 1px white; /* WebKit browsers */
+				text-stroke: 1px white; /* Standard syntax */
+			}
+		</style>
+		
+		<style>
+			body {
+				font-family: 'Arial', sans-serif;
+				background-color: #f4f4f4; /* Light gray background */
+			}
+	
+			form {
+				max-width: 600px;
+				margin: 20px auto;
+				background-color: #007bff; /* Blue background */
+				padding: 20px;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				color: #fff; /* White text color */
+			}
+	
+			h2 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+	
+			label {
+				display: block;
+				margin-bottom: 8px;
+			}
+	
+			input,
+			textarea {
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 16px;
+				box-sizing: border-box;
+			}
+	
+			button {
+				background-color: #fff; /* White button color */
+				color: #007bff; /* Blue button text color */
+				padding: 10px 20px;
+				border: none;
+				cursor: pointer;
+			}
+	
+			button:hover {
+				background-color: #e6e6e6; /* Light gray on hover */
+			}
+	
+			.error-message {
+				color: red;
+				margin-top: -10px;
+				margin-bottom: 10px;
+			}
+		</style>
+		<style>
+			.logo-img {
+				max-width: 40%; /* Adjust the maximum width of the logo */
+				height: auto;
+			}
+		</style>
+
+<style>
+
+	.image-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 40px;
+	}
+	
+	.image-container img {
+		width: 100%;
+		height: 350px; /* Set a fixed height for the images */
+		object-fit: cover; /* Ensure images cover the container without distortion */
+		cursor: pointer;
+	}
+	
+	/* Styles for the slider modal */
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 60px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+	
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 90%;
+		height: auto;
+		max-height: 90%;
+	}
+	
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 35px;
+		color: #fff;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+	
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 20px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+	
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+	
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	
+	.exit {
+		position: absolute;
+		top: 15px;
+		right: 90px;
+		color: #fff;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+	
+	.exit:hover,
+	.exit:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	</style>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyWg4ByETfF8E5R4EtFq4s/F6GJPUjRAMg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SYopr4z+DS5F/vJd5K2ST5vmM99aE2iSBLA6G6" crossorigin="anonymous">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/St Joseph School Logo.png" type="gvkimg/logo.jpeg" />
+		<link rel="apple-touch-icon" href="img/St Joseph School Logo.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-corporate-3.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+	</head>
+	<body data-plugin-page-transition>
+		<div class="body">
+			<header id="header"
+			data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': true}">
+			<div class="header-body border-color-primary border-top-0 box-shadow-none">
+
+
+
+				<div class="header-container container z-index-2">
+					<div class="header-row py-2">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo header-logo-sticky-change">
+									<a href="index.html">
+										<img class="header-logo-sticky opacity-0" alt="GVK" width="100" height="70"
+											data-sticky-width="89" data-sticky-height="43" data-sticky-top="88"
+											src="img/St Joseph School Logo.png">
+										<img class="header-logo-non-sticky opacity-0" alt="GVK" width="100"
+											height="80" src="img/St Joseph School Logo.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<ul class="header-extra-info d-flex align-items-center">
+									<li class="d-none d-sm-inline-flex">
+										<div class="header-extra-info-icon">
+											<i
+												class="fa-solid fa-location-dot text-color-primary text-4 position-relative bottom-2"></i>
+										</div>
+										
+									</li>
+									<li class="d-none d-sm-inline-flex">
+										<div class="header-extra-info-icon">
+											<i
+												class="far fa-envelope text-color-primary text-4 position-relative bottom-2"></i>
+										</div>
+										<div class="header-extra-info-text">
+											<label>SEND US AN EMAIL</label>
+											<strong><a href="mailto:sjpsagpalace@yahoo.com"
+													class="text-decoration-none text-color-hover-primary">sjpsagpalace@yahoo.com </a></strong>
+										</div>
+									</li>
+									<li>
+										<div class="header-extra-info-icon">
+											<i
+												class="fab fa-whatsapp text-color-primary text-4 position-relative bottom-1"></i>
+										</div>
+										<div class="header-extra-info-text">
+											<label>CALL US NOW</label>
+											<strong><a href="tel:6309935410"
+													class="text-decoration-none text-color-hover-primary">6309935410 </a></strong>
+										</div>
+									</li>
+
+									<li>
+										<a href="https://payfees.kyc365pro.com/login" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">PAY FEE</a>
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-nav-bar bg-primary" data-sticky-header-style="{'minResolution': 991}"
+					data-sticky-header-style-active="{'background-color': 'transparent'}"
+					data-sticky-header-style-deactive="{'background-color': '#0088cc'}">
+					<div class="container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row justify-content-end">
+									<div class="header-nav header-nav-force-light-text justify-content-start py-2 py-lg-3"
+										data-sticky-header-style="{'minResolution': 991}"
+										data-sticky-header-style-active="{'margin-left': '135px'}"
+										data-sticky-header-style-deactive="{'margin-left': '0'}">
+										<div
+											class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle active"
+															href="index.html">
+															Home
+														</a>
+													</li>
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle"
+															href="aboutSchool.html">
+															About
+														</a>
+														<ul class="dropdown-menu">
+															<li>
+																<div class="dropdown-mega-content`">
+																	<div class="row">
+																		<div class="col-lg-3">
+
+																			<ul class="dropdown-mega-sub-nav">
+																				<li><a class="dropdown-item"
+																						href="aboutSchool.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">About
+																						the School</a></li>
+																				<li><a class="dropdown-item"
+																						href="civilization.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">Civilization 
+																						</a></li>
+																				<li><a class="dropdown-item"
+																						href="purpose.html"
+																						style="color: black;"
+																						onmouseover="this.style.color='blue'"
+																						onmouseout="this.style.color='black'">Purpose & Commitment
+																						</a></li>
+
+																			</ul>
+
+																		</div>
+
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</li>
+
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle "
+															href="Extra-curricular.html">
+															Extra-curricular
+														</a>
+													</li>
+
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle "
+															href="gallery.html">
+															Gallery
+														</a>
+													</li>
+													
+													
+													<li class="dropdown dropdown-full-color dropdown-light">
+														<a class="dropdown-item dropdown-toggle" href="contact.html">
+															Contact Us
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav my-2" data-bs-toggle="collapse"
+											data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+			<div role="main" class="main">
+				<section class="section section-with-shape-divider border-0 py-0 m-0">
+					<div class="shape-divider shape-divider-bottom z-index-3" style="height: 136px;">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 136" preserveAspectRatio="xMinYMin">
+							<path d="M 0 0.11 L 0 136 L 1920 136 L 1920 1.9 C 1650.0482 79.0955 1327.0648 134 980 134 C 615.6218 134 277.7878 84.5059 0 0.11 Z" fill="#ffffff"/>
+						</svg>
+					</div>
+								<!-- Carousel Slide 2 -->
+								<div class="owl-item position-relative overlay overlay-show overlay-op-9 pt-5" style="background-image: url(img/slides/slide-corporate-10-2.jpg); background-size: cover; background-position: center; height: 100vh;">
+									<div class="container position-relative z-index-3 h-100">
+										<div class="row justify-content-center align-items-center h-100">
+											<div class="col-lg-7 text-center">
+												<div class="d-flex flex-column align-items-center justify-content-center h-100">
+													<h3 class="position-relative text-color-light text-5 line-height-5 font-weight-normal ls-0 px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+														<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-7">
+															<img src="img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+														</span>
+													
+														<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-7">
+															<img src="img/slides/slide-title-border-light.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+														</span>
+													</h3>
+													<h1 class="text-color-light font-weight-extra-bold text-10 text-md-12-13 line-height-1 line-height-sm-3 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="500" data-plugin-options="{'minWindowWidth': 0}">ABOUT THE SCHOOL</h1>
+													<p class="text-4-5 text-color-light font-weight-light text-center mb-5" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 30}"></p>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container container-xl-custom py-4">
+					<div class="row py-lg-5 my-5">
+						<div class="col-lg-7 pe-lg-5 mb-5 mb-lg-0">
+							<h2 class="font-weight-bold mb-4">St. Joseph’s Public School
+							</h2>
+							<p class="text-color-dark text-6 line-height-5"></p>
+							<p >St. Joseph's School, established in June 2000 in the Malakpet area of Hyderabad, is a part of the prestigious St. Joseph's Group of Schools, founded by late Sri U. G. Reddy in 1971. Over the years, the group has grown to encompass numerous educational institutions across the twin cities, building a legacy of excellence in education.
+							</p>
+							<p>The school offers a structured 12-year educational journey with two years of Preparatory Education (Preparatory 1 and Preparatory 2) nurturing early learning and social development, followed by Primary School (Classes I to V) and Senior School (Classes VI to X) preparing students for the ICSE (Indian Certificate of Secondary Education) Examination, affiliated with CISCE, New Delhi.</p>
+							<!-- <a href="#" class="learn-more text-primary font-weight-semibold text-2">VIEW MORE <i class="fas fa-chevron-right text-3 ms-2"></i></a> -->
+						<p>
+							English is the medium of instruction, and the curriculum is designed to encourage curiosity, creativity, and independent thinking, preparing children for their journey into formal schooling under the guidance of able and experienced teachers.  
+							 </p>
+					<p>The school's mission goes beyond academic instruction, emphasizing the intellectual, moral, emotional, physical, and aesthetic growth of each student.
+
+					</p>	
+				</p>
+				<p>
+					Though academic excellence is the main aim of our institution, it is necessary to expose the students to the outside world to relax and think. To this end, the activities of various Clubs like the Science Club, Eco Club, Quiz Club, and Literary Club foster creativity, critical thinking, and leadership. Students regularly participate in prestigious ASISC Literary and Cultural Competitions at Zonal, Regional, and National Levels giving them an opportunity to showcase their talents on larger platforms and gain national exposure.  Our students are also encouraged to participate in various Olympiads conducted by ISFO, Unified Council, and Maths Olympiad. 
+					
+
+				</p>	
+				<p>
+					The school also emphasises the importance of Physical Education and Sports, and encourages students to actively participate in a wide range of sports, including Basketball, Cricket, Volleyball, Karate, Kho-Kho and many more. Additionally, indoor games such as Chess and Carrom are equally promoted. These games are not only practised within the school but are also played at inter-school levels, allowing students to hone their skills in a competitive environment.
+					
+
+				</p>	
+				<p>
+					Our students have the opportunity to participate and excel in the Regional and National Level CISCE Games and Sports events, with many advancing to the esteemed SGFI National Games and Sports. 
+					
+
+				</p>	
+				<p>
+					Introduced in 2021-2022, the NCC Army Wing (JD & JW) under the 5 Telangana Battalion is a hallmark of the school’s commitment to discipline and leadership. This program instills a sense of national pride and equips cadets with the skills and resilience needed to face future challenges, shaping them into responsible and committed citizens of the country.
+					
+
+				</p>
+				<p>Field trips, picnics, annual excursions to places of historical and cultural significance enrich students' understanding of India's heritage, further enriching their learning experience beyond the classroom.
+
+				</p>
+				<p>Democratic principles are instilled through an active School Cabinet and Parliament comprising the President, the Prime Minister, and the Council of Ministers. This platform grooms future leaders by addressing school issues and implementing innovative ideas. The functioning of the School Cabinet and School Parliament in our institution has been highly successful in laying a strong foundation for future parliamentarians and legislators.
+
+				</p>
+				<p>Through its blend of academics, extracurriculars, and leadership opportunities, St. Joseph's School nurtures well-rounded individuals poised to excel in a rapidly changing world. The school continues its mission of empowering young minds, upholding its legacy of distinction within the St. Joseph's Group of Schools.h's Group of Schools.
+
+				</p>
+					</div>
+
+						<div class="col-md-10 col-lg-5">
+							<div class="row">
+								<div class="col-6 mb-4">
+									<div class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200">
+										<span class="d-inline-block font-weight-extra-bold text-color-primary font-italic line-height-1 text-14 ls-0 mb-2">01</span>
+										<h4 class="font-weight-bold text-5 ps-1 mb-2">Founding Year</h4>
+										<p class="ps-1">The School was Founded in the Year 2000</p>
+									</div>
+								</div>
+								<div class="col-6 mb-4">
+									<div class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
+										<span class="d-inline-block font-weight-extra-bold text-color-primary font-italic line-height-1 text-14 ls-0 mb-2">02</span>
+										<h4 class="font-weight-bold text-5 ps-1 mb-2">Society</h4>
+										<p class="ps-1">St. Joseph’s Education Society 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 mb-4 mb-sm-0">
+									<div class="appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="1000">
+										<span class="d-inline-block font-weight-extra-bold text-color-primary font-italic line-height-1 text-14 ls-0 mb-2">03</span>
+										<h4 class="font-weight-bold text-5 ps-1 mb-2">Society Registered</h4>
+										<p class="ps-1"> The society was registerd in 1971
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr class="pattern tall py-3">
+
+				
+
+			
+
+			</div>
+			<hr class="pattern tall py-3">
+			
+					<h2 class="section-title mb-5 text-center">Our Curriculum -ICSE</h2>
+					<section class="section section-text-light section-angled section-center bg-primary border-top-0">
+						<div class="section-angled-layer-top bg-light"></div>
+						<div class="section-angled-layer-bottom bg-dark"></div>
+						<div class="section-angled-content">
+							<div class="container">
+								<div class="row">
+									<div class="col py-4">
+										<h4 class="mb-3">Additional Math Programs</h4>
+										<p class="mb-0">Includes Abacus For Classes I to IV.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+	
+					<section class="section section-text-light section-angled section-angled-reverse section-center bg-dark border-top-0">
+						<div class="section-angled-layer-bottom bg-primary"></div>
+						<div class="section-angled-content">
+							<div class="container">
+								<div class="row">
+									<div class="col py-4">
+										<h4 class="mb-3">Extracurricular Activities</h4>
+										<p class="mb-0">Dance, music, karate, elocution, essay writing, painting, drawing, and sports are integral components of the curriculum.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+	
+					<section class="section section-text-light section-angled section-center bg-primary border-top-0">
+						<div class="section-angled-layer-bottom bg-light"></div>
+						<div class="section-angled-content">
+							<div class="container">
+								<div class="row">
+									<div class="col py-4">
+										<h4 class="mb-3">Talent Development</h4>
+										<p class="mb-0">Focus on uncovering and nurturing hidden talents in students.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+				<footer id="footer" class="mt-0">
+					<div class="container my-10">
+						<div class="row py-5">
+							<div class="col-lg-4 d-flex align-items-center">
+								<img src="img/St Joseph School Logo.png" alt="Your Logo" class="logo-img">
+							</div>
+							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+								<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Contact Details</h5>
+								<p class="text-4 mb-2">Address: <span class="text-color-light">16-2-741,Asmangadh Palace, Malakpet, Hyderabad, Telangana 500036 </span></p>
+								<p class="text-4 mb-2">Phone no.: <span class="text-color-light">040 2406 4196 | 040-24066213 | 6309935410 </span></p>
+								<p class="text-4 mb-0">Email: <span class="text-color-light">sjpsagpalace@yahoo.com </span></p>
+							</div>
+							<div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+								<div>
+									<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Links</h5>
+									<ul class="footer-links m-0"><!-- Center the links -->
+										<li><a href="aboutSchool.html" target="_blank" title="About School">About School</a></li>
+										<li><a href="gallery.html" target="_blank" title="Gallery">Gallery</a></li>
+									   </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="footer-copyright footer-copyright-style-2 pb-4">
+							<div class="py-2">
+								<div class="row py-4">
+									<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+										<p>© Copyright 2024. All Rights Reserved.</p>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<a href="https://www.sredutech.com/" target="_blank" title="Gallery">Developed by SR Edu Technologies Pvt. Ltd</a>
+								
+							</div>
+						</div>
+					</div>
+				</footer>
+				
+			
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="js/views/view.contact.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+</html>
